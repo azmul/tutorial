@@ -1,15 +1,11 @@
-import { ColorSchemesSwitcher } from "@/components/color-schemes-switcher";
 import {
   AppShell,
   AppShellHeader,
   AppShellMain,
-  Group,
   Text,
   Title,
 } from "@mantine/core";
-import Image from "next/image";
 import { Testimonial } from "@/components/Testimonial";
-import { Css } from "@/components/Css";
 import { HeaderMegaMenu } from "@/components/Header/Header";
 import { FooterLinks } from "@/components/Footer/Footer";
 
@@ -52,10 +48,6 @@ export default function Home() {
           TailwindCSS. To get started edit page.tsx file.
         </Text>
 
-        <div className="flex justify-center mt-10">
-          <ColorSchemesSwitcher />
-        </div>
-        <Css />
         <Testimonial />
       </AppShellMain>
       <FooterLinks />

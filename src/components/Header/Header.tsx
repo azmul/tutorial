@@ -27,9 +27,10 @@ import {
   useMantineTheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./Header.module.scss";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher/ThemeSwitcher";
+import LOGO from "@/assets/logo.png";
+import Image from 'next/image';
 
 const mockdata = [
   {
@@ -92,11 +93,11 @@ export function HeaderMegaMenu() {
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <MantineLogo size={30} />
+          <Image src={LOGO} alt="Blocks" width={70} height={70} />
 
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#" className={classes.link}>
-              Home
+            <a target="_blank" href="/tutorials" className={classes.link}>
+              Tutorials
             </a>
             <HoverCard
               width={600}
@@ -146,10 +147,7 @@ export function HeaderMegaMenu() {
               </HoverCard.Dropdown>
             </HoverCard>
             <a href="#" className={classes.link}>
-              Learn
-            </a>
-            <a href="#" className={classes.link}>
-              Academy
+              Contact
             </a>
           </Group>
 
@@ -192,10 +190,7 @@ export function HeaderMegaMenu() {
           </UnstyledButton>
           <Collapse in={linksOpened}>{links}</Collapse>
           <a href="#" className={classes.link}>
-            Learn
-          </a>
-          <a href="#" className={classes.link}>
-            Academy
+            Contact
           </a>
 
           <Divider my="sm" />
