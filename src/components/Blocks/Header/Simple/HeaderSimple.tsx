@@ -35,7 +35,7 @@ export function HeaderSimple() {
   ));
 
   return (
-    <Card id="header-simple" className='mt-4 py-8'>
+    <Card shadow="sm" padding="lg" radius="md" withBorder id="header-simple" className='mt-4 py-8'>
       <Title className="mb-4" order={3}>Header - Simple</Title>
 
       <Divider mb={20} />

@@ -53,15 +53,15 @@ export function DoubleHeader() {
     ));
 
     return (
-        <Card id="header-multiLayers" className='mt-4 py-8'>
+        <Card shadow="sm" padding="lg" radius="md" withBorder id="header-multiLayers" className='mt-4 py-8'>
             <Title className="mb-4" order={3}>Header - Multi Layers</Title>
 
             <Divider mb={20} />
 
             <header className={classes.header}>
                 <Container className={classes.inner}>
-                <Image src={LOGO} alt="Blocks" width={70} height={70} />
-                <Box className={classes.links} visibleFrom="sm">
+                    <Image src={LOGO} alt="Blocks" width={70} height={70} />
+                    <Box className={classes.links} visibleFrom="sm">
                         <Group justify="flex-end">{secondaryItems}</Group>
                         <Group gap={0} justify="flex-end" className={classes.mainLinks}>
                             {mainItems}

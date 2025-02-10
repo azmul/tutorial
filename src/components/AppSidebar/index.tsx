@@ -36,7 +36,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         {/* <SearchForm /> */}
       </SidebarHeader>
       <SidebarContent
-        className="gap-0 text-white data-[state=open]:bg-sidebar-primary"
+        className="gap-0 dark:text-white data-[state=open]:bg-sidebar-primary"
         data-scrollspy="#scrollspy"
         data-scrollspy-scrollable-parent="#scrollspy-scrollable-parent"
       >
@@ -46,7 +46,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             key={item.title}
             title={item.title}
             defaultOpen
-            className="group/collapsible text-white"
+            className="group/collapsible dark:text-white"
           >
             <SidebarGroup>
               <SidebarGroupLabel
