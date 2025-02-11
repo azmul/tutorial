@@ -93,10 +93,12 @@ export function HeaderMegaMenu() {
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <Image src={LOGO} alt="Blocks" width={70} height={70} />
+          <a href="/" className={classes.link}>
+            <Image src={LOGO} alt="Blocks" width={70} height={70} />
+          </a>
 
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a target="_blank" href="/tutorials" className={classes.link}>
+            <a href="/tutorials" className={classes.link}>
               Tutorials
             </a>
             <HoverCard

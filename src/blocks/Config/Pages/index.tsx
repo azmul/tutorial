@@ -1,12 +1,12 @@
-import { Card, Title, Divider, Text, Highlight, List, ListItem } from '@mantine/core';
+import { Title, Divider, Text, Highlight, List, ListItem } from '@mantine/core';
 import { ThemeIcon } from '@mantine/core';
 import { IconCircleCheck } from '@tabler/icons-react';
 
 export function Pages() {
     return (
-        <Card shadow="sm" padding="lg" radius="md" withBorder id="pages" className='mt-4 py-8'>
-            <Title className="mb-4" order={2}>Pages</Title>
-            <Divider mb={20} />
+        <div>
+            <Title  order={2}>Pages</Title>
+            <Divider my={20} />
             <Text mb={10}>To create a new page, follow these below steps:</Text>
             <List
                 spacing="xs"
@@ -73,6 +73,6 @@ export function Pages() {
                 </ListItem>
 
             </List>
-        </Card>
+        </div>
     )
 }

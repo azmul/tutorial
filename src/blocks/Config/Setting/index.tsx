@@ -4,9 +4,9 @@ import { IconCircleCheck, IconCircleDashed } from '@tabler/icons-react';
 
 export function Setting() {
     return (
-        <Card shadow="sm" padding="lg" radius="md" withBorder id="setting" className='mt-4 py-8'>
+        <>
             <Title className="mb-4" order={2}>Setting</Title>
-            <Divider mb={20} />
+            <Divider my={20} />
             <Text mb={10}>Apply the common setting for the your website, follow these below steps:</Text>
             <List
                 spacing="xs"
@@ -36,6 +36,6 @@ export function Setting() {
                 </ListItem>
 
             </List>
-        </Card>
+        </>
     )
 }

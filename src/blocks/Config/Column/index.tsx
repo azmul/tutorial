@@ -1,12 +1,11 @@
-import { Card, Title, Divider, Text, List, ListItem } from '@mantine/core';
+import { Title, Divider, Text, List, ListItem } from '@mantine/core';
 import { ThemeIcon } from '@mantine/core';
 import { IconCircleCheck } from '@tabler/icons-react';
 
 export function Column() {
     return (
-        <Card shadow="sm" padding="lg" radius="md" withBorder id="column" className='mt-4 py-8'>
-            <Title className="mb-4" order={2}>Column</Title>
-            <Divider mb={20} />
+        <>
+            <Divider my={20} />
             <Text mb={10}>To create a new column for a page, follow these below steps:</Text>
             <List
                 spacing="xs"
@@ -33,6 +32,6 @@ export function Column() {
                     <Text>The block will have a margin top.</Text>
                 </ListItem>
             </List>
-        </Card>
+        </>
     )
 }

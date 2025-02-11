@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { Burger, Container, Group, Card, Title, Divider, Text, List, ListItem, Code, Button, Highlight } from '@mantine/core';
+import { Burger, Container, Group, Title, Divider, Text, List, ListItem, Code, Button, Highlight } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderSimple.module.css';
 import { ThemeIcon } from '@mantine/core';
@@ -35,10 +35,9 @@ export function HeaderSimple() {
   ));
 
   return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder id="header-simple" className='mt-4 py-8'>
-      <Title className="mb-4" order={3}>Header - Simple</Title>
-
-      <Divider mb={20} />
+    <div>
+      <Title ta="center" mt={20} order={3}>Header - Simple</Title>
+      <Divider my={20} />
 
       <header className={classes.header}>
         <Container size="md" className={classes.inner}>
@@ -55,8 +54,8 @@ export function HeaderSimple() {
           <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
         </Container>
       </header>
-      <Text mb={10}>
-        To create the simple header like above header, follow these below steps:
+      <Text my={20}>
+        To create the simple header like above header from admin panel, follow these below steps:
       </Text>
       <List
         spacing="xs"
@@ -89,7 +88,7 @@ export function HeaderSimple() {
         <ListItem>
           <Title order={4}>
             Focus Buttons</Title>
-          <Text>Add Focus Buttons like (Log in, Sign up). If you need. There are four types of focus buttons. Select the type of focus button that you need from the dropdown.</Text>
+          <Text>Add Focus Buttons like (<Code>Log in, Sign up</Code>). If you need. There are four types of focus buttons. Select the type of focus button that you need from the dropdown.</Text>
         </ListItem>
         <ListItem>
           <Title order={4}>Show Search</Title>
@@ -104,6 +103,6 @@ export function HeaderSimple() {
           <Text>Select <Code>Show theme icon</Code> if you want to show theme icon in the header.</Text>
         </ListItem>
       </List>
-    </Card >
+    </div >
   );
 }

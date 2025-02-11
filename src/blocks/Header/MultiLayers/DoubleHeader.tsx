@@ -53,10 +53,10 @@ export function DoubleHeader() {
     ));
 
     return (
-        <Card shadow="sm" padding="lg" radius="md" withBorder id="header-multiLayers" className='mt-4 py-8'>
-            <Title className="mb-4" order={3}>Header - Multi Layers</Title>
+        <div>
+            <Title ta="center" mt={20} order={3}>Header - Multi Layers</Title>
 
-            <Divider mb={20} />
+            <Divider my={20} />
 
             <header className={classes.header}>
                 <Container className={classes.inner}>
@@ -76,7 +76,7 @@ export function DoubleHeader() {
                     />
                 </Container>
             </header>
-            <Text mb={10}>To create the multi layers header like above header, follow these below steps:</Text>
+            <Text my={20}>To create the multi layers header like above header from admin panel, follow these below steps:</Text>
             <List
                 spacing="xs"
                 size="sm"
@@ -122,7 +122,7 @@ export function DoubleHeader() {
                     <Text>Select <Code>Show theme icon</Code> if you want to show theme icon in the header.</Text>
                 </ListItem>
             </List>
-        </Card>
+        </div>
 
     );
 }
