@@ -169,7 +169,7 @@ export function HeaderMegaMenu() {
                 </ListItem>
                 <ListItem>
                     <Title order={4}>Primary Links</Title>
-                    <Text> Add Primary Links like (<Code>Home, Features, Learn, Academy</Code> ) </Text>
+                    <Text> Add Primary Links like (<Code>Home, Features, Learn, Academy</Code> ) . Add Sub Menus under a menus if you need like <Code>Learn, Support</Code></Text>
                 </ListItem>
                 <ListItem>
                     <Title order={4}>

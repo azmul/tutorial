@@ -30,6 +30,7 @@ import {
     ThemeIcon,
     Code,
     Highlight,
+    Button
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantinex/mantine-logo';
@@ -122,6 +123,10 @@ export function HeaderTabs() {
                                 </Menu.Item>
                             </Menu.Dropdown>
                         </Menu>
+                        <Group visibleFrom="sm">
+                            <Button variant="default">Log in</Button>
+                            <Button>Sign up</Button>
+                        </Group>
                     </Group>
                 </Container>
                 <Container size="md">
@@ -168,7 +173,7 @@ export function HeaderTabs() {
                 </ListItem>
                 <ListItem>
                     <Title order={4}>Primary Links</Title>
-                    <Text> Add Primary Links like (<Code>Features, Pricing, Learn, Community</Code> ) </Text>
+                    <Text> Add Primary Links like (<Code>Home, Orders, Education ...</Code> ) </Text>
                 </ListItem>
                 <ListItem>
                     <Title order={4}>

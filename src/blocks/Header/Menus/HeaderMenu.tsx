@@ -1,6 +1,6 @@
 "use client";
 import { IconChevronDown } from '@tabler/icons-react';
-import { Burger, Center, Container, Group, Menu, Title, Divider, Text, List, ListItem, Highlight, Code, ThemeIcon } from '@mantine/core';
+import { Burger, Center, Container, Group, Menu, Title, Divider, Text, List, ListItem, Highlight, Code, ThemeIcon, Button } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderMenu.module.css';
 import LOGO from "@/assets/logo.png";
@@ -85,11 +85,15 @@ export function HeaderMenu() {
                             {items}
                         </Group>
                         <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+                        <Group visibleFrom="sm">
+                            <Button variant="default">Log in</Button>
+                            <Button>Sign up</Button>
+                        </Group>
                     </div>
                 </Container>
             </header>
             <Text mb={10}>
-                To create the simple header like above header from admin panel, follow these below steps:
+                To create the menus header like above header from admin panel, follow these below steps:
             </Text>
             <List
                 spacing="xs"
@@ -109,7 +113,7 @@ export function HeaderMenu() {
                 </ListItem>
                 <ListItem>
                     <Title order={4}>Type</Title>
-                    <Text>Select <Code>Simple</Code> from the <Code>Select Header Type</Code> dropdown.</Text>
+                    <Text>Select <Code>Menus</Code> from the <Code>Select Header Type</Code> dropdown.</Text>
                 </ListItem>
                 <ListItem>
                     <Title order={4}>Logo</Title>
@@ -117,7 +121,7 @@ export function HeaderMenu() {
                 </ListItem>
                 <ListItem>
                     <Title order={4}>Primary Links</Title>
-                    <Text> Add Primary Links like (<Code>Features, Pricing, Learn, Community</Code> ) </Text>
+                    <Text> Add Primary Links like (<Code>Features, Learn, About, Pricing, Support</Code> ) . Add Sub Menus under a menus if you need like <Code>Learn, Support</Code></Text>
                 </ListItem>
                 <ListItem>
                     <Title order={4}>
