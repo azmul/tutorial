@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import {
-    IconChevronDown,
     IconHeart,
     IconLogout,
     IconMessage,
@@ -21,7 +20,6 @@ import {
     Menu,
     Tabs,
     Text,
-    UnstyledButton,
     useMantineTheme,
     Title,
     Divider,

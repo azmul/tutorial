@@ -62,7 +62,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const baseColor = "#6BD731"; // Replace with your desired base color
+  const baseColor = "#2b944e"; // Replace with your desired base color
   const mantinePalette: any = generateMantinePalette(baseColor);
 
   const theme = mergeMantineTheme(
