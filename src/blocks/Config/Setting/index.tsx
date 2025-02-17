@@ -1,6 +1,6 @@
-import { Card, Title, Divider, Text, List, ListItem, Highlight } from '@mantine/core';
+import { Title, Divider, Text, List, ListItem, Highlight } from '@mantine/core';
 import { ThemeIcon } from '@mantine/core';
-import { IconCircleCheck, IconCircleDashed } from '@tabler/icons-react';
+import { IconCircleCheck } from '@tabler/icons-react';
 
 export function Setting() {
     return (

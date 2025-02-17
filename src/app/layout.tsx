@@ -8,7 +8,7 @@ import {
 } from "@mantine/core";
 import localFont from "next/font/local";
 import Head from "next/head";
-import { breakpoints, colors } from "./theme";
+import { breakpoints } from "./theme";
 import tinycolor from "tinycolor2";
 import { Theme } from "@/components/Theme";
 

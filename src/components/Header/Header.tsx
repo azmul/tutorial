@@ -31,6 +31,7 @@ import classes from "./Header.module.scss";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher/ThemeSwitcher";
 import LOGO from "@/assets/logo.png";
 import Image from 'next/image';
+import Link from "next/link";
 
 const mockdata = [
   {
@@ -93,17 +94,26 @@ export function HeaderMegaMenu() {
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <a href="/" className={classes.link}>
+          <Link href="/" className={classes.link}>
             <Image src={LOGO} alt="Blocks" width={70} height={70} />
-          </a>
+          </Link>
 
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="/tutorials" className={classes.link}>
+            <Link href="/tutorials" className={classes.link}>
               Tutorials
-            </a>
-            <a href="#" className={classes.link}>
+            </Link>
+            <Link href="#testimonial" className={classes.link}>
+              Testimonial
+            </Link>
+            <Link href="#comparison" className={classes.link}>
+              Comparison Table
+            </Link>
+            <Link href="#faq" className={classes.link}>
+              FAQ
+            </Link>
+            <Link href="#contact" className={classes.link}>
               Contact
-            </a>
+            </Link>
           </Group>
 
           <Group visibleFrom="sm">
@@ -135,7 +145,7 @@ export function HeaderMegaMenu() {
           <a href="#" className={classes.link}>
             Home
           </a>
-   
+
           <Collapse in={linksOpened}>{links}</Collapse>
           <a href="#" className={classes.link}>
             Contact

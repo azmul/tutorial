@@ -5,6 +5,7 @@ import LOGO from "@/assets/logo.png";
 import Image from 'next/image';
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export function TutorialLayout({
     children,
@@ -30,9 +31,9 @@ export function TutorialLayout({
             <AppShellHeader>
                 <Group h="100%" px="md">
                     <Burger opened={opened} onClick={() => setOpened(!opened)} hiddenFrom="sm" size="sm" />
-                    <a href='/'>
+                    <Link href='/'>
                         <Image className='cursor-pointer' src={LOGO} alt="Blocks" width={70} height={70} />
-                    </a>
+                    </Link>
                 </Group>
             </AppShellHeader>
 

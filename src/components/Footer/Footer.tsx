@@ -1,8 +1,10 @@
 "use client";
 import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
 import { ActionIcon, Container, Group, Text } from '@mantine/core';
-import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './Footer.module.scss';
+import LOGO from "@/assets/logo.png";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const data = [
   {
@@ -60,7 +62,9 @@ export function FooterLinks() {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          <MantineLogo size={30} />
+          <Link href="/" className={classes.link}>
+            <Image src={LOGO} alt="Blocks" width={70} height={70} />
+          </Link>
           <Text size="xs" c="dimmed" className={classes.description}>
             Build fully functional accessible web applications faster than ever
           </Text>

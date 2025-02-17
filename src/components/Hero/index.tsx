@@ -1,24 +1,34 @@
 import { IconCheck } from '@tabler/icons-react';
-import { Button, Container, Group, Image, List, Text, ThemeIcon, Title, ListItem, Grid } from '@mantine/core';
+import { Button, Container, Group, List, ThemeIcon, Title, ListItem, Highlight } from '@mantine/core';
 import { HeroVideoDialog } from '@/components/magicui/hero-video-dialog';
 import classes from './style.module.css';
-import { RetroGrid } from "@/components/magicui/retro-grid";
+import { Cover } from "@/components/ui/cover";
 
 export function Hero() {
     return (
         <>
-            <div className="relative flex h-[200px] w-full flex-col items-center justify-center">
+            <div className="relative flex  w-full flex-col items-center justify-center">
+                <Title fz={46} size="h1"
+                    style={{ fontFamily: 'Greycliff CF, var(--mantine-font-family)' }}
+                    fw={900}
+                    ta="center"
+                    mb="xl" mt="xl">
+                    🚀 Build amazing websites <br /> at <Cover>warp speed</Cover>
+                </Title>
                 <Container size="lg">
-                    <Title ta="center" my={30}>
-                    🚀 Build Lightning-Fast Websites in Hours with 100+ Web Blocks & an Intuitive Admin Panel!
+                    <Title size="h1"
+                        style={{ fontFamily: 'Greycliff CF, var(--mantine-font-family)' }}
+                        fw={900}
+                        ta="center"
+                        mb={30}>
+                        Make Lightning-Fast Websites in Hours with 100+ Web Blocks & an Intuitive Admin Panel!
                     </Title>
                 </Container>
-                <RetroGrid />
+
             </div>
             <Container size="lg">
                 <div className={classes.inner}>
                     <div className={classes.content}>
-
                         <List
                             spacing="sm"
                             size="sm"
@@ -29,16 +39,19 @@ export function Hero() {
                             }
                         >
                             <ListItem>
-                                <b>Lightning-Fast Performance</b> - SEO-friendly server-side rendering out of the box
+                                <b>Lightning-Fast Performance Next.js</b> - SEO-friendly server-side rendering out of the box
                             </ListItem>
                             <ListItem>
-                                <b>Drag-and-Drop Block Library</b> - Choose from 100+ pre-designed blocks: blogs, pricing tables, contact forms, portfolios, and SaaS dashboards. No design skills needed.
+                                <b>Drag-and-Drop Block Library</b> - Choose from <b>100+</b> pre-designed blocks: blogs, pricing tables, contact forms, portfolios, and SaaS dashboards. No design skills needed.
                             </ListItem>
                             <ListItem>
                                 <b>Live Preview</b> - See page changes instantly as you edit. Tweak layouts, colors, or content in real-time without switching tabs or refreshing..
                             </ListItem>
                             <ListItem>
-                                <b>Multilingual Support</b> - Effortlessly translate your site into 50+ languages with built-in i18n..
+                                <b>Multilingual Support</b> - Effortlessly translate your site into 50+ languages with built-in i18n.
+                            </ListItem>
+                            <ListItem>
+                                <b>Automatic Theme Generator</b> - Instantly Create a Stunning Theme from Your Brand Colors!
                             </ListItem>
                             <ListItem>
                                 <b>Mobile-First Responsiveness</b> - Every block auto-adapts to mobile, tablet, and desktop. Built-in performance audits for Core Web Vitals..
